@@ -10,6 +10,7 @@ folders_to_copy=(
     hypr
     kitty
     neofetch
+    nvim
 )
 
 echo "Starting folder copy process..."

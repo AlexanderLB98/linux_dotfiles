@@ -13,7 +13,7 @@ window#waybar {
 }
 
 window#waybar.hidden {
-  opacity: 0.1;
+  opacity: 0.5;
 }
 
 #workspaces {
@@ -86,27 +86,16 @@ window#waybar.hidden {
   background-color: #f38ba8;
 }
 
-@keyframes blink {
-  to {
-    background-color: #f38ba8;
-    color: #181825;
-  }
-}
-
 #battery.warning,
 #battery.critical,
 #battery.urgent {
-  background-color: #ff0048;
-  color: #181825;
-  animation-name: blink;
-  animation-duration: 0.5s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
+  background-color: #ff0000;
+  color: #FFFF00;
 }
 
 #battery.charging {
   background-color: #a6e3a1;
+  color: #181825;
 }
 
 #backlight {
