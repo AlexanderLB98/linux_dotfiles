@@ -93,7 +93,7 @@
             "headphone": "",
             "default": ["󰖀","󰕾",""]
         },
-        "on-click": "~/bin/switch_audio_output.sh",
+        "on-click": "pamixer -t",
 	"on-click-right": "pavucontrol",
         "scroll-step": 1
     },
@@ -103,7 +103,7 @@
         "on-click": "~/.config/rofi/launchers/misc/launcher.sh &"
     },
     "battery": {
-        "format": "{capacity}% {icon}",
+	        "format": "{capacity}% {icon}",
         "format-icons": {
             "charging": [
                 "󰢜",
