@@ -11,6 +11,7 @@ folders_to_copy=(
     kitty
     neofetch
     nvim
+    rofi
 )
 
 echo "Starting folder copy process..."
