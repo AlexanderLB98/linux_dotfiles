@@ -23,6 +23,8 @@ return {
       config = {
         header = vim.split(logo, '\n'),
         center = {
+          { action = "lua require'telescope'.extensions.projects.projects{}", desc = ' Find Project', icon = ' ', key = 'p' },
+
           { action = 'Telescope find_files', desc = ' Find File', icon = ' ', key = 'f' },
           { action = 'ene | startinsert', desc = ' New File', icon = ' ', key = 'n' },
           { action = 'Telescope oldfiles', desc = ' Recent Files', icon = ' ', key = 'r' },
