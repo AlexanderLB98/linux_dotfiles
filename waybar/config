@@ -6,9 +6,9 @@
 		"margin-bottom": 0,
 		"margin-right": 10,
 		"spacing": 5,
-		"modules-left": ["custom/logo", "clocktwo", "hyprland/workspaces", "custom/launcher", "cpu", "memory", "custom/weather"],
-		"modules-center": ["custom/spotify", "clocktwo"],
-		"modules-right": ["clocktwo", "tray", "backlight", "bluetooth", "pulseaudio", "network", "battery", "clock", "custom/power-menu"],
+		"modules-left": ["custom/logo", "hyprland/workspaces", "custom/launcher", "cpu", "memory", "custom/weather"],
+		"modules-center": ["custom/spotify"],
+		"modules-right": ["tray", "backlight", "bluetooth", "pulseaudio", "network", "battery", "clock", "custom/power-menu"],
 
 		"custom/logo": {
 			"format": "  ",
@@ -72,15 +72,9 @@
 			"spacing": 10
 		},
 		"clock": {
-			"format": "<span color='#bf616a'> </span>{:%a %b %d}",
-			"format-alt": "<span color='#bf616a'> </span>{:%I:%M %p}",
-			"tooltip-format": "<big>{:%B %Y}</big>\n<tt><small>{calendar}</small></tt>"
-		},
-		"clocktwo": {
-			"interval": 60,
-			"format": "{:%H:%M}",
-			"max-length": 25,
-			"tooltip-format": "<big>{:%B %Y}</big>\n"
+			"format": "{:%Y-%m-%d %H:%M:%S}",  
+			"tooltip": true,                   
+			"interval": 60                     		
 		},
 		"cpu": {
 			"interval": 10,
