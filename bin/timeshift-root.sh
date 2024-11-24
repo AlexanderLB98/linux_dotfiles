@@ -10,7 +10,7 @@ if [ ! -d "$TIMESIFT_DIR" ]; then
 fi
 
 # El dispositivo donde está montado el directorio (en este caso, /dev/sdb1 es el dispositivo)
-BACKUP_DEVICE="/dev/sdb1"
+BACKUP_DEVICE="/dev/sdb5"
 
 # Configuración para Timeshift (en este caso, rsync como tipo de instantánea)
 SNAPSHOT_DEVICE="/dev/nvme0n1p3"  
