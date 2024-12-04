@@ -341,8 +341,8 @@
       "car": " ",
       "default": ["", "", ""]
     },
-    "on-click": "pavucontrol",
-    "on-click-right": "~/bin/audio_changer.py"
+    "on-click": "~/bin/audio_switch_auto.py",
+    "on-click-right": "pavucontrol"
   },
 
   // Bluetooth
