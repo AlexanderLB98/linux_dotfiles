@@ -1,10 +1,14 @@
 #!/bin/bash
 # Obtener el dispositivo de salida predeterminado actual
 current_sink=$(pactl get-default-sink)
+### To list the devices: pactl list sinks
+### To obtain only the names: pactl list sinks | grep Name | awk '{print $2}'
+
 
 # Establecer el nombre de tus dispositivos de salida
-headphones_sink="alsa_output.usb-Logitech_G733_Gaming_Headset_0000000000000000-00.pro-output-0"
-speakers_sink="alsa_output.usb-Lexicon_Lexicon_Alpha-00.iec958-stereo"
+headphones_sink="alsa_output.usb-Logitech_G733_Gaming_Headset_0000000000000000-00.analog-stereo"
+speakers_sink="bluez_output.48_5F_2D_47_6C_4D.1"
+# speakers_sink="alsa_output.usb-Lexicon_Lexicon_Alpha-00.iec958-stereo"
 
 # Determinar el estado actual y el icono
 if [ "$current_sink" = "$headphones_sink" ]; then

@@ -341,7 +341,7 @@
       "car": " ",
       "default": ["", "", ""]
     },
-    "on-click": "~/bin/audio_switch_auto.py",
+    "on-click": "/home/lucas/bin/switch_audio_output.sh",
     "on-click-right": "pavucontrol"
   },
 
