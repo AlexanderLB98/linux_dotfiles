@@ -58,6 +58,6 @@ end, { desc = "Open [P]rojects list" })
 
 -- TODO:
 -- Nvim-conda env, Telescope integration
--- vim.keymap.set('n', '<leader>e', CondaActivate, { desc = 'Select Conda Environment' })
+-- vim.keymap.set("n", "<leader>e", CondaActivate, { desc = "Select Conda Environment" })
 
 -- vim: ts=2 sts=2 sw=2 et
